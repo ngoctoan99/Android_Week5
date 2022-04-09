@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FA0A1032"
+    tools:context=".Welcome">
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="245dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/custom"
+        android:text="Skip"
+        android:gravity="center"
+        android:textStyle="normal"
+        android:textColor="#FF5722"
+        android:textSize="7dp"
+        app:backgroundTint="#FFFFFF"></Button>
+
+    <ImageView
+        android:id="@+id/anh1"
+        android:layout_width="250dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/bg"></ImageView>
+
+    <ImageView
+        android:id="@+id/anh2"
+        android:layout_width="210dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/anh1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/s1"></ImageView>
+    <LinearLayout
+        android:id="@+id/views"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/anh2"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+        <View
+            android:id="@+id/view1"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="@color/white"></View>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sign in with"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"></TextView>
+        <View
+            android:id="@+id/view2"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/white"></View>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/views"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom"
+        app:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/google"
+        android:text="Google"
+        android:textSize="10dp"
+        android:textColor="@color/black"></Button>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/views"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom"
+        android:drawableLeft="@drawable/face"
+        android:text="Facebook"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        app:backgroundTint="#FFFFFF"></Button>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btn2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom4"
+        android:backgroundTint="#FFFFFF"
+        android:text="Start with email or phone"
+        android:textSize="10dp"
+        app:backgroundTint="#FFFFFF"></Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="10dp"
+        android:text="Already have an account? Sign In"
+        android:textColor="#FFFFFF"></TextView>
+</RelativeLayout>
