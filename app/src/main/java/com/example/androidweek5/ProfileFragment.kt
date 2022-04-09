@@ -27,10 +27,10 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_profile2, container, false)
         preferences = activity!!.getSharedPreferences("SAVEAS", Context.MODE_PRIVATE)
-        view.setOnClickListener {
+        val btnback = view.findViewById<Button>(R.id.btnback)
+        btnback.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.To_homeScreenFragment)
         }
         val btnsignout = view.findViewById<Button>(R.id.btnout)
